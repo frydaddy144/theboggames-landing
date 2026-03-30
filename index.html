@@ -30,25 +30,28 @@
             left: 0;
             right: 0;
             background: linear-gradient(90deg, #FF9900, #FFB84D);
-            padding: 12px;
+            padding: 10px;
             display: flex;
             justify-content: center;
             align-items: center;
-            gap: 20px;
+            gap: 10px;
             flex-wrap: wrap;
             z-index: 1000;
             box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+            max-height: 60px;
+            overflow-y: auto;
         }
         
         .ad-bar a {
             color: #232F3E;
             text-decoration: none;
             font-weight: 600;
-            font-size: 0.95rem;
-            background: rgba(255,255,255,0.9);
-            padding: 8px 16px;
-            border-radius: 20px;
+            font-size: 0.85rem;
+            background: rgba(255,255,255,0.95);
+            padding: 6px 12px;
+            border-radius: 15px;
             transition: transform 0.2s, background 0.2s;
+            white-space: nowrap;
         }
         
         .ad-bar a:hover {
@@ -57,8 +60,8 @@
         }
         
         .container {
-            max-width: 600px;
-            margin-top: 80px;
+            max-width: 700px;
+            margin-top: 90px;
         }
         
         .logo {
@@ -118,18 +121,33 @@
             color: #475569;
             font-size: 0.9rem;
         }
+        
+        .disclosure {
+            margin-top: 10px;
+            font-size: 0.75rem;
+            color: #64748b;
+        }
     </style>
 </head>
 <body>
     <!-- Amazon Associates Ad Bar -->
     <div class="ad-bar">
-        <span style="color:#232F3E;font-weight:bold;">🛒 Shop Games:</span>
+        <span style="color:#232F3E;font-weight:bold;font-size:0.9rem;">🛒 Top Games:</span>
         <a href="https://www.amazon.com/dp/B00U5G1W4E?tag=theboggames-20" target="_blank">Catan</a>
         <a href="https://www.amazon.com/dp/B09V3KXJPB?tag=theboggames-20" target="_blank">Wingspan</a>
         <a href="https://www.amazon.com/dp/B08J4CRY5P?tag=theboggames-20" target="_blank">Ticket to Ride</a>
         <a href="https://www.amazon.com/dp/B07YBSKR3B?tag=theboggames-20" target="_blank">Azul</a>
         <a href="https://www.amazon.com/dp/B0C4ZQKGSL?tag=theboggames-20" target="_blank">D&D 5e</a>
         <a href="https://www.amazon.com/dp/B01GSRX2EE?tag=theboggames-20" target="_blank">Uno</a>
+        <a href="https://www.amazon.com/dp/B0BSHF7WHW?tag=theboggames-20" target="_blank">Monopoly</a>
+        <a href="https://www.amazon.com/dp/B09X2LK7NQ?tag=theboggames-20" target="_blank">Clue</a>
+        <a href="https://www.amazon.com/dp/B00WJ5II7Y?tag=theboggames-20" target="_blank">Sequence</a>
+        <a href="https://www.amazon.com/dp/B0C33CHD2W?tag=theboggames-20" target="_blank">Exploding Kittens</a>
+        <a href="https://www.amazon.com/dp/B01ICJVIRC?tag=theboggames-20" target="_blank">Terraforming Mars</a>
+        <a href="https://www.amazon.com/dp/B0B7J5YQSJ?tag=theboggames-20" target="_blank">Pandemic</a>
+        <a href="https://www.amazon.com/dp/B00YS2H9SO?tag=theboggames-20" target="_blank">Splendor</a>
+        <a href="https://www.amazon.com/dp/B01F4OFK92?tag=theboggames-20" target="_blank">7 Wonders</a>
+        <a href="https://www.amazon.com/dp/B07YZMSV6P?tag=theboggames-20" target="_blank">Scythe</a>
     </div>
     
     <div class="container">
@@ -154,7 +172,10 @@
         <p class="coming-soon">Coming Soon 🚀</p>
         
         <p class="footer">
-            thebog.games • As an Amazon Associate, we earn from qualifying purchases.
+            thebog.games
+        </p>
+        <p class="disclosure">
+            As an Amazon Associate, we earn from qualifying purchases.
         </p>
     </div>
 </body>
