@@ -159,7 +159,55 @@
     </style>
 </head>
 <body>
-    <div class="container">
+    <style>
+        .ad-bar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(90deg, #FF9900, #FFB84D);
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+        }
+        
+        .ad-bar a {
+            color: #232F3E;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.8rem;
+            background: rgba(255,255,255,0.95);
+            padding: 6px 12px;
+            border-radius: 15px;
+            white-space: nowrap;
+        }
+        
+        .ad-bar a:hover {
+            background: #fff;
+        }
+    </style>
+</head>
+<body>
+    <!-- Amazon Associates Ad Bar -->
+    <div class="ad-bar">
+        <span style="color:#232F3E;font-weight:bold;font-size:0.85rem;">🛒 Shop Top Games:</span>
+        <a href="https://www.amazon.com/s?k=catan+board+game&tag=theboggames-20" target="_blank">Catan</a>
+        <a href="https://www.amazon.com/s?k=wingspan+board+game&tag=theboggames-20" target="_blank">Wingspan</a>
+        <a href="https://www.amazon.com/s?k=ticket+to+ride+board+game&tag=theboggames-20" target="_blank">Ticket to Ride</a>
+        <a href="https://www.amazon.com/s?k=azul+board+game&tag=theboggames-20" target="_blank">Azul</a>
+        <a href="https://www.amazon.com/s?k=dungeons+dragons+5e&tag=theboggames-20" target="_blank">D&D 5e</a>
+        <a href="https://www.amazon.com/s?k=terraforming+mars+board+game&tag=theboggames-20" target="_blank">Terraforming Mars</a>
+        <a href="https://www.amazon.com/s?k=pandemic+board+game&tag=theboggames-20" target="_blank">Pandemic</a>
+        <a href="https://www.amazon.com/s?k=scythe+board+game&tag=theboggames-20" target="_blank">Scythe</a>
+        <a href="https://www.amazon.com/s?k=7+wonders+board+game&tag=theboggames-20" target="_blank">7 Wonders</a>
+    </div>
+    
+    <div class="container" style="margin-top: 70px;">
         <h1>🎲 TheBog.games</h1>
         <p class="tagline">Bring Your Own Game. Play More.</p>
         <p class="motto">"Venture into the bog to find hidden games and fellow players."</p>
