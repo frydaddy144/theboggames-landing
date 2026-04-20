@@ -4,41 +4,194 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TheBog.games — Find Players. Play Games.</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        :root {
+            --primary: #4ade80;
+            --primary-dark: #22c55e;
+            --bg-dark: #0f172a;
+            --bg-card: #1e293b;
+            --text: #f1f5f9;
+            --text-muted: #94a3b8;
+        }
+        
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: var(--bg-dark);
+            min-height: 100vh;
+            color: var(--text);
+            line-height: 1.6;
+        }
+        
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: 
+                radial-gradient(ellipse at 20% 20%, rgba(74, 222, 128, 0.08) 0%, transparent 50%),
+                radial-gradient(ellipse at 80% 80%, rgba(251, 191, 36, 0.06) 0%, transparent 50%);
+            pointer-events: none;
+            z-index: -1;
+        }
+        
+        .container {
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 60px 20px;
+            text-align: center;
+        }
+        
+        h1 {
+            font-size: 3rem;
+            font-weight: 800;
+            margin-bottom: 10px;
+            background: linear-gradient(135deg, var(--primary) 0%, #22d3ee 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .tagline {
+            font-size: 1.4rem;
+            color: var(--text-muted);
+            margin-bottom: 8px;
+        }
+        
+        .motto {
+            font-size: 1rem;
+            color: #64748b;
+            font-style: italic;
+            margin-bottom: 30px;
+        }
+        
+        .hero {
+            font-size: 1.2rem;
+            color: #cbd5e1;
+            margin-bottom: 40px;
+        }
+        
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+            gap: 15px;
+            margin-bottom: 50px;
+            max-width: 550px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .feature {
+            background: rgba(255,255,255,0.05);
+            padding: 20px 15px;
+            border-radius: 12px;
+            font-size: 0.95rem;
+            border: 1px solid rgba(255,255,255,0.08);
+        }
+        
+        .feature-icon {
+            font-size: 1.8rem;
+            display: block;
+            margin-bottom: 8px;
+        }
+        
+        .waitlist-box {
+            background: var(--bg-card);
+            border: 1px solid rgba(74, 222, 128, 0.2);
+            border-radius: 16px;
+            padding: 30px;
+            margin-bottom: 40px;
+        }
+        
+        .waitlist-box h2 {
+            font-size: 1.5rem;
+            margin-bottom: 8px;
+            color: var(--primary);
+        }
+        
+        .waitlist-box p {
+            color: var(--text-muted);
+            margin-bottom: 20px;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 14px 30px;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+            border: none;
+            border-radius: 10px;
+            font-size: 1rem;
+            font-weight: 600;
+            color: #0f172a;
+            text-decoration: none;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+        
+        .btn:hover {
+            transform: translateY(-2px);
+        }
+        
+        .social {
+            margin-bottom: 30px;
+        }
+        
+        .social a {
+            color: var(--text-muted);
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        
+        .social a:hover {
+            color: var(--primary);
+        }
+        
+        .footer {
+            color: #475569;
+            font-size: 0.85rem;
+        }
+        
+        .disclosure {
+            margin-top: 15px;
+            font-size: 0.75rem;
+            color: #475569;
+        }
+    </style>
 </head>
-<body style="font-family: Arial, sans-serif; max-width: 600px; margin: 50px auto; padding: 20px; text-align: center;">
-    <h1 style="color: #22c55e;">🎲 TheBog.games</h1>
-    <p style="font-size: 1.3rem; color: #666;">Bring Your Own Game. Play More.</p>
-    <p style="font-style: italic; color: #888;">"Venture into the bog to find hidden games and fellow players."</p>
-    
-    <hr style="margin: 30px 0;">
-    
-    <p>The social network for tabletop gamers. Find local players, host game nights, track your Game Passport, and earn badges!</p>
-    
-    <ul style="text-align: left; display: inline-block; margin: 20px 0;">
-        <li>🎯 Check-ins</li>
-        <li>🏆 Badges</li>
-        <li>📘 Game Passport</li>
-        <li>🗺️ Find Players</li>
-        <li>🎲 Host Games</li>
-    </ul>
-    
-    <hr style="margin: 30px 0;">
-    
-    <h2>Join the Waitlist</h2>
-    <p>Be the first to play. Early access coming soon.</p>
-    
-    <a href="https://docs.google.com/forms/d/e/1FAIpQLSewmX1-gnix5AmiqPIclJK8YolpQXoYIKkdJ9hMf2lx2zzXkA/viewform" 
-       target="_blank"
-       style="display: inline-block; background: #22c55e; color: white; padding: 15px 30px; text-decoration: none; border-radius: 8px; font-size: 1.1rem;">
-        Join the Waitlist
-    </a>
-    
-    <hr style="margin: 30px 0;">
-    
-    <p style="font-size: 0.9rem; color: #888;">
-        <a href="https://x.com/theboggames" style="color: #666;">𝕏 @theboggames</a> &nbsp;|&nbsp; 
-        <a href="https://instagram.com/thebog.games" style="color: #666;">📷 @thebog.games</a>
-    </p>
-    <p style="font-size: 0.75rem; color: #aaa;">As an Amazon Associate, we earn from qualifying purchases.</p>
+<body>
+    <div class="container">
+        <h1>🎲 TheBog.games</h1>
+        <p class="tagline">Bring Your Own Game. Play More.</p>
+        <p class="motto">"Venture into the bog to find hidden games and fellow players."</p>
+        
+        <p class="hero">
+            The social network for tabletop gamers. Find local players, host game nights, track your Game Passport, and earn badges!
+        </p>
+        
+        <div class="features">
+            <div class="feature"><span class="feature-icon">🎯</span>Check-ins</div>
+            <div class="feature"><span class="feature-icon">🏆</span>Badges</div>
+            <div class="feature"><span class="feature-icon">📘</span>Game Passport</div>
+            <div class="feature"><span class="feature-icon">🗺️</span>Find Players</div>
+            <div class="feature"><span class="feature-icon">🎲</span>Host Games</div>
+        </div>
+        
+        <div class="waitlist-box">
+            <h2>Join the Waitlist</h2>
+            <p>Be the first to play. Early access coming soon.</p>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSewmX1-gnix5AmiqPIclJK8YolpQXoYIKkdJ9hMf2lx2zzXkA/viewform" 
+               target="_blank" class="btn">
+                Join the Waitlist
+            </a>
+        </div>
+        
+        <div class="social">
+            <a href="https://x.com/theboggames" target="_blank">𝕏 @theboggames</a>
+            <a href="https://instagram.com/thebog.games" target="_blank">📷 @thebog.games</a>
+        </div>
+        
+        <p class="footer">thebog.games</p>
+        <p class="disclosure">As an Amazon Associate, we earn from qualifying purchases.</p>
+    </div>
 </body>
 </html>
